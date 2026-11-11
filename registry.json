@@ -1,0 +1,19 @@
+{
+  "$schema": "agent-registry-v3.1",
+  "version": 1,
+  "last_updated": "2026-11-09T00:00:00",
+  "last_writer": "bootstrap",
+  "conflict_resolution": "version-bump + lazy-reload",
+  "system_builtins_policy": "direct-use, not indexed",
+  "tools": [],
+  "quicker_actions": [],
+  "rules": {
+    "local_first": true,
+    "batch_first": true,
+    "gui_fallback_only": true,
+    "atomic_scripts_only": true,
+    "plan_before_execute": ">=3 steps",
+    "archive_approval_required": true,
+    "system_builtins_priority": true
+  }
+}

@@ -1,0 +1,5 @@
+[
+  { "name": "c", "syntax": "bz c -y -fmt:zip out.zip <files>", "note": "新建包,会覆盖同名" },
+  { "name": "x", "syntax": "bz x -aoa -o:<dir> <archive>", "note": "解压,保留目录结构" },
+  { "name": "l", "syntax": "bz l <archive>", "note": "列出包内容,解压前确认" }
+]

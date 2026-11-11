@@ -1,0 +1,28 @@
+# ---- 生成器与测试产物 ----
+# bootstrap-registry.ps1 不传 -Root 时的默认输出目录
+generated/
+# 验收测试用的隔离副本
+_AgentSim_QA/
+
+# ---- 运行时产物 ----
+*.tmp
+tools/_archive/*
+!tools/_archive/README.md
+examples/extracted/
+output.zip
+
+# ---- 编辑器 / 操作系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- 关于个人数据 ----
+# registry.json / registry.md / pending/pending-tools.json 在仓库里是「空模板」，
+# 必须提交，否则 clone 后脚本无法直接运行。日常注册工具后它们会变成你的本机数据，
+# 若不希望被 git 追踪，请在 .git/info/exclude 里加入：
+#   registry.json
+#   registry.md
+#   pending/pending-tools.json
+#   tools/*.md

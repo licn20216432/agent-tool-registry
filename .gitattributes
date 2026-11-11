@@ -1,0 +1,7 @@
+# 本项目用 bootstrap-registry.ps1 内嵌模板逐行比对（见 TEST_GUIDE T57），
+# 行尾必须保持 LF；否则 Windows 上 core.autocrlf=true 会把工作区文件转成 CRLF，
+# 导致模板一致性检查误报、生成的包与仓库文件出现无意义差异。
+* text=auto
+*.ps1  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf

@@ -1,0 +1,5 @@
+{
+  "note": "复杂/无通用复用性的自制脚本提案队列；只有用户明确同意后才允许进入 registry.json",
+  "policy": "archive_approval_required: register.ps1 intercepts script files, writes a proposal with status=pending_user_approval, and exits 2 without touching registry.json",
+  "items": []
+}

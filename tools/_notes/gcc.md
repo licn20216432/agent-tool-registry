@@ -1,0 +1,11 @@
+﻿# GCC (MinGW-w64 / MSYS2)
+- 功能: compile(c/c++)
+- 环境: PATH 含 mingw64\bin
+- 常用:
+  - `gcc main.c -o main.exe`
+  - `gcc -g main.c -o main.exe` （带调试符号）
+  - `gcc -O2 main.c -o main.exe` （优化）
+  - `g++ main.cpp -o main.exe -std=c++17`
+- 链接 Win32 库: `-lwinmm` `-lgdi32` `-luser32`
+- 坑: Windows 下缺 DLL 会运行时报错；交叉编译需指定 target
+- ✅ 本地编译 C/C++  ❌ 解释型任务

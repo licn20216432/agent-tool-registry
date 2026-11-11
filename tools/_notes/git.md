@@ -1,0 +1,11 @@
+﻿# Git for Windows
+- 功能: version-control/vcs/clone/commit/diff
+- 常用:
+  - `git init` / `git clone <url>`
+  - `git add .` / `git commit -m "msg"` / `git status`
+  - `git diff` / `git diff --stat`
+  - `git pull` / `git push -u origin main`
+  - `git log --oneline --graph`
+- 大文件: 配 Git LFS
+- 忽略: `.gitignore`
+- ✅ 代码/配置版本管理  ❌ 大二进制频繁变更
